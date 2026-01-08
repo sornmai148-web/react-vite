@@ -1,0 +1,1 @@
+import{u as n,j as s}from"./index-DQobkMYg.js";function a(){const{t}=n("translation");return s.jsx("div",{className:"p-2",children:s.jsx("h3",{className:"text-yellow-500",children:t("detail")})})}export{a as component};
