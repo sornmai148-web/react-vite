@@ -8,7 +8,7 @@ export const LanguageSwitcher = () => {
 
   return (
     <div>
-      <h1>
+      <h1 className="text-black">
         {t("welcome")} : {i18n.language}
       </h1>
       <button onClick={() => changeLanguage("en")}>English</button>
