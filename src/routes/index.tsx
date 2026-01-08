@@ -10,6 +10,7 @@ function Index() {
 
   return (
     <div className="p-2">
+      here is the result:
       <h3 className="text-yellow-500">{t("detail")}</h3>
     </div>
   );
