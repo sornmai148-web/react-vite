@@ -8,6 +8,7 @@
     "dev": "concurrently \"node scripts/sync-locales.mjs\" \"vite\"",
     "build": "node scripts/sync-locales.mjs && tsc -b && vite build",
     "lint": "eslint .",
+    "sync-locale": "node scripts/sync-locales.mjs",
     "preview": "vite preview",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist"
