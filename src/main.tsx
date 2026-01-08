@@ -7,7 +7,11 @@ import "./i18n.ts";
 
 import { routeTree } from "./routeTree.gen";
 
-const router = createRouter({ routeTree, basepath: "/react-vite" });
+const router = createRouter({
+  routeTree,
+  basepath: "/react-vite",
+  defaultPreload: "intent",
+});
 
 declare module "@tanstack/react-router" {
   interface Register {
