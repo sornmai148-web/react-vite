@@ -1,1 +1,0 @@
-import{u as t,j as s}from"./index-CYxYTiM0.js";function a(){const{t:e}=t("translation");return s.jsxs("div",{className:"p-2",children:["here is the result:",s.jsx("h3",{className:"text-yellow-500",children:e("detail")})]})}export{a as component};
