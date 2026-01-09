@@ -21,7 +21,7 @@ const router = createRouter({
   context: { queryClient },
   basepath: "/react-vite",
   defaultPreload: "intent",
-  defaultPreloadStaleTime: 0,
+  // defaultPreloadStaleTime: 0,
   scrollRestoration: true,
 });
 
