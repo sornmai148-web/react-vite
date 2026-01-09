@@ -5,7 +5,14 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./index.css";
 import "./i18n.ts";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 900000,
+      gcTime: 900000,
+    },
+  },
+});
 
 import { routeTree } from "./routeTree.gen";
 
