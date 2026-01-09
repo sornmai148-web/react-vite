@@ -1,1 +1,0 @@
-import{k as t}from"./index-B-QR2jxS.js";import{u as r}from"./useTranslation-BGFm0v7U.js";function e(){const{t:o}=r();return t.jsx("div",{className:"p-2 text-red-500",children:t.jsx("p",{children:o("about")})})}export{e as component};
