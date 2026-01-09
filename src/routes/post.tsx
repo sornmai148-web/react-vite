@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { postsQueryOption } from "../api/queryOptions/post.option";
 import { useSuspenseQuery } from "@tanstack/react-query";
+import { Button } from "../components/ui/button";
 
 export const Route = createFileRoute("/post")({
   loader: ({ context: { queryClient } }) =>
@@ -16,12 +17,12 @@ function RouteComponent() {
 
   return (
     <div className="flex flex-col space-y-2.5 text-black">
-      <button
+      <Button
         onClick={() => refetch()}
         className="text-red-500 bg-amber-500 w-fit px-4 py-2"
       >
         Refech
-      </button>
+      </Button>
 
       {(data || [])?.map((post) => (
         <div key={post?.id}>
