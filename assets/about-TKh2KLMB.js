@@ -1,1 +1,0 @@
-import{k as t}from"./index-DSoIySBj.js";import{u as r}from"./useTranslation-Dsp78RId.js";function e(){const{t:o}=r();return t.jsx("div",{className:"p-2 text-red-500",children:t.jsx("p",{children:o("about")})})}export{e as component};
