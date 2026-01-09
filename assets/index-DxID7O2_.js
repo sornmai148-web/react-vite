@@ -1,1 +1,0 @@
-import{k as t}from"./index-BNk0wl8D.js";import{u as n}from"./useTranslation-Dtyj0-Nj.js";function a(){const{t:s}=n("translation");return t.jsx("div",{className:"p-2",children:t.jsx("h3",{className:"text-yellow-500",children:s("detail")})})}export{a as component};
