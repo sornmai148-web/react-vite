@@ -1,24 +1,43 @@
-import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
+import {
+  createRootRouteWithContext,
+  Link,
+  Outlet,
+} from "@tanstack/react-router";
+
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
-import { LanguageSwitcher } from "../components/LanguageSwitcher";
+// import { LanguageSwitcher } from "../components/LanguageSwitcher";
+import type { QueryClient } from "@tanstack/react-query";
 
 const RootLayout = () => (
-  <div className="bg-white w-screen h-screen">
-    <div className="p-2 gap-2">
+  <>
+    <div className="flex items-center space-x-2.5 p-2">
       <Link to="/" className="[&.active]:font-bold">
         Home
       </Link>
       <Link to="/about" className="[&.active]:font-bold">
         About
       </Link>
+      <Link to="/post" className="[&.active]:font-bold">
+        post
+      </Link>
     </div>
 
-    <LanguageSwitcher />
+    {/* <LanguageSwitcher /> */}
 
     <hr />
     <Outlet />
     <TanStackRouterDevtools />
-  </div>
+  </>
 );
 
-export const Route = createRootRoute({ component: RootLayout });
+export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
+  {
+    component: RootLayout,
+    notFoundComponent: () => (
+      <div className="text-green-500">Not found 404</div>
+    ),
+    errorComponent: () => (
+      <div className="text-red-500">🙁 Opps,Something Went Wrong!</div>
+    ),
+  }
+);

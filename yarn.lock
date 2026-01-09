@@ -858,14 +858,26 @@
   resolved "https://registry.yarnpkg.com/@tanstack/history/-/history-1.145.7.tgz#38a28b0b020fe3c6e1da0ec810cf1b64be66f978"
   integrity sha512-gMo/ReTUp0a3IOcZoI3hH6PLDC2R/5ELQ7P2yu9F6aEkA0wSQh+Q4qzMrtcKvF2ut0oE+16xWCGDo/TdYd6cEQ==
 
-"@tanstack/react-router-devtools@^1.145.11":
+"@tanstack/query-core@5.90.16":
+  version "5.90.16"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.90.16.tgz#19a972c2ffbc47727ab6649028af1bee70e28cdf"
+  integrity sha512-MvtWckSVufs/ja463/K4PyJeqT+HMlJWtw6PrCpywznd2NSgO3m4KwO9RqbFqGg6iDE8vVMFWMeQI4Io3eEYww==
+
+"@tanstack/react-query@^5.90.16":
+  version "5.90.16"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.90.16.tgz#76955d7027b5bff3d7f51163db7ea1c0bd430cb5"
+  integrity sha512-bpMGOmV4OPmif7TNMteU/Ehf/hoC0Kf98PDc0F4BZkFrEapRMEqI/V6YS0lyzwSV6PQpY1y4xxArUIfBW5LVxQ==
+  dependencies:
+    "@tanstack/query-core" "5.90.16"
+
+"@tanstack/react-router-devtools@1.145.11":
   version "1.145.11"
   resolved "https://registry.yarnpkg.com/@tanstack/react-router-devtools/-/react-router-devtools-1.145.11.tgz#8eb33791a78beae11ad4d17358ea8093e17a56e2"
   integrity sha512-GngvMMa9QdoLKDegWk0ruxthzz594Zeqgrs7APBN2StuqneBk4lENTZA5nMj4Q3ehuGrZzbCLUCdpTpUQEKXFw==
   dependencies:
     "@tanstack/router-devtools-core" "1.145.11"
 
-"@tanstack/react-router@^1.145.11":
+"@tanstack/react-router@1.145.11":
   version "1.145.11"
   resolved "https://registry.yarnpkg.com/@tanstack/react-router/-/react-router-1.145.11.tgz#f4e9190068318327b8cb982138a09509f89bad7a"
   integrity sha512-dkXX4dOmPOkR8nG4JhwLGKqKR0B4434/bInX3CNjKGxxf4CRKLeYrd0gYkIzukehx7Ltcd6kUEYGUEWqk7p0xQ==
@@ -921,7 +933,7 @@
     tsx "^4.19.2"
     zod "^3.24.2"
 
-"@tanstack/router-plugin@^1.145.11":
+"@tanstack/router-plugin@1.145.11":
   version "1.145.11"
   resolved "https://registry.yarnpkg.com/@tanstack/router-plugin/-/router-plugin-1.145.11.tgz#8b8cb56acd3cfea38e9927656053e5ef2323fbe1"
   integrity sha512-DhpMeiPGGCkRKG/Ct2bJzn56byvSE8n6sI+UpmMYB5GnlBKlj1pjt6SNQM7xapc1sucaEX4mA8i31JceYpHMxw==
@@ -1352,7 +1364,7 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-concurrently@^9.2.1:
+concurrently@9.2.1:
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-9.2.1.tgz#248ea21b95754947be2dad9c3e4b60f18ca4e44f"
   integrity sha512-fsfrO0MxV64Znoy8/l1vVIjjHa29SZyyqPgQBwhiDcaW8wJc2W3XWVOGx4M3oJBnv/zdUZIIp1gDeS98GzP8Ng==
