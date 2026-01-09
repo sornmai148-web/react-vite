@@ -5,4 +5,5 @@ export const postsQueryOption = () =>
   queryOptions({
     queryKey: ["posts"],
     queryFn: () => fetchPosts(),
+    staleTime: 900000,
   });

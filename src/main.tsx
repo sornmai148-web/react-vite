@@ -5,14 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./index.css";
 import "./i18n.ts";
 
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 900000,
-      gcTime: 900000,
-    },
-  },
-});
+const queryClient = new QueryClient();
 
 import { routeTree } from "./routeTree.gen";
 
@@ -21,7 +14,7 @@ const router = createRouter({
   context: { queryClient },
   basepath: "/react-vite",
   defaultPreload: "intent",
-  // defaultPreloadStaleTime: 0,
+  defaultPreloadStaleTime: 0,
   scrollRestoration: true,
 });
 
