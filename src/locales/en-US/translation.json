@@ -1,8 +1,12 @@
 {
   "common": {
+    "choose-language": "Choose language",
     "coptyright": "© {{year}} HaiWai News. All rights reserved"
   },
   "components": {
+    "marquee": {
+      "content": "Welcome to Haiwai news, looking for breaking news with variety of catgories, you come to the right place."
+    },
     "not-found": {
       "title": "Page Not Found",
       "sub-title": "This page is temporarily unavailable, please check other pages.",

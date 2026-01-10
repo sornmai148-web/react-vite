@@ -1,8 +1,6 @@
 import { Container } from "@/modules/shared/components/Container";
+import { LocaleSwitcher } from "@/modules/shared/components/LanguageSwitcher";
 import { Logo } from "./Logo";
-// import { LocaleSwitcher } from "@/assets/news-logo.png";
-
-// import { Logo } from "./logo";
 
 export const Header = () => (
   <div className="sticky top-0 z-40 bg-primary backdrop-blur-sm">
@@ -10,7 +8,7 @@ export const Header = () => (
       <div className="flex items-center space-x-2 sm:space-x-3">
         <Logo />
       </div>
-      {/* <LocaleSwitcher /> */}
+      <LocaleSwitcher />
     </Container>
   </div>
 );

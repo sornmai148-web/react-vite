@@ -1,8 +1,12 @@
 {
   "common": {
+    "choose-language": "选择语言",
     "coptyright": "版权所有 © {{year}} 海外新闻网"
   },
   "components": {
+    "marquee": {
+      "content": "欢迎来到 Haiwai News，如果您正在寻找涵盖多种类别的突发新闻，那么您来对地方了。"
+    },
     "not-found": {
       "title": "页面未找到",
       "sub-title": "此页面暂时不可用，请查看其他页面",
