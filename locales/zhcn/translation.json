@@ -2,6 +2,18 @@
   "common": {
     "coptyright": "版权所有 © {{year}} 海外新闻网"
   },
+  "components": {
+    "not-found": {
+      "title": "页面未找到",
+      "sub-title": "此页面暂时不可用，请查看其他页面",
+      "btn": "返回首页"
+    },
+    "something-wrong": {
+      "title": "服务器开小差了",
+      "sub-title": "请稍后再试",
+      "btn": "返回首页"
+    }
+  },
   "welcome": "欢迎使用 React + Vite + i18n！",
   "about": "欢迎来到关于页面",
   "contact": "欢迎来到联系页面",
