@@ -1,4 +1,7 @@
 {
+  "common": {
+    "coptyright": "版权所有 © {{year}} 海外新闻网"
+  },
   "welcome": "欢迎使用 React + Vite + i18n！",
   "about": "欢迎来到关于页面",
   "contact": "欢迎来到联系页面",

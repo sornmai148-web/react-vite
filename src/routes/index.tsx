@@ -1,16 +1,18 @@
+import { TextMarqueeRunner } from "@/modules/shared/components/TextMarqueeRunner";
 import { createFileRoute } from "@tanstack/react-router";
-import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: Homepage,
 });
 
-function Index() {
-  const { t } = useTranslation("translation");
-
+function Homepage() {
   return (
-    <div className="p-2">
-      <h3 className="text-yellow-500">{t("detail")}</h3>
+    <div className="relative min-h-[calc(100dvh-150px)] h-auto">
+      {/*-- Text animation --*/}
+      <TextMarqueeRunner
+        text="Welcome to Haiwai news, looking for breaking news with variety of
+        catgories, you come to the right place."
+      />
     </div>
   );
 }

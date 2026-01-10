@@ -1,4 +1,7 @@
 {
+  "common": {
+    "coptyright": "© {{year}} HaiWai News. All rights reserved"
+  },
   "welcome": "Welcome to React + Vite + i18n!",
   "about": "Welcome to about page",
   "contact": "Welcome to contact page",

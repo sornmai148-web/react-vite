@@ -20,9 +20,11 @@ export function syncLocales() {
 
     if (fs.existsSync(srcFile)) {
       fs.copyFileSync(srcFile, destFile);
-      console.log(`Synced ${srcFile} → ${destFile}`);
+      // console.log(`Synced ${srcFile} → ${destFile}`);
     }
   });
+
+  console.log(`Synced locales completed.`);
 }
 
 // Run directly
