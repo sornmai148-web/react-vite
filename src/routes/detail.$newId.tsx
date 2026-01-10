@@ -2,6 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/detail/$newId")({
   component: RouteComponent,
+  loader: async () => {
+    // simulate network delay
+    await new Promise((r) => setTimeout(r, 1500));
+    return { users: [] };
+  },
 });
 
 function RouteComponent() {
