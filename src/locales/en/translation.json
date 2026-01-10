@@ -2,6 +2,18 @@
   "common": {
     "coptyright": "© {{year}} HaiWai News. All rights reserved"
   },
+  "components": {
+    "not-found": {
+      "title": "Page Not Found",
+      "sub-title": "This page is temporarily unavailable, please check other pages.",
+      "btn": "Return to Home"
+    },
+    "something-wrong": {
+      "title": "The server is having issues",
+      "sub-title": "Please try again later",
+      "btn": "Return to Home"
+    }
+  },
   "welcome": "Welcome to React + Vite + i18n!",
   "about": "Welcome to about page",
   "contact": "Welcome to contact page",

@@ -1,6 +1,6 @@
 "use client";
 
-import LogoImg from "@/assets/news-logo.png";
+import LogoImg from "@/assets/news-logo.webp";
 import { Link } from "@tanstack/react-router";
 
 export const Logo = () => {
