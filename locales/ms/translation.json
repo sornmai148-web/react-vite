@@ -1,8 +1,12 @@
 {
   "common": {
+    "choose-language": "Pilih bahasa",
     "coptyright": "© {{year}} HaiWai News. Hak cipta terpelihara"
   },
   "components": {
+    "marquee": {
+      "content": "Selamat datang ke Haiwai News. Jika anda sedang mencari berita tergempar daripada pelbagai kategori, anda berada di tempat yang betul."
+    },
     "not-found": {
       "title": "Halaman Tidak Ditemui",
       "sub-title": "Halaman ini tidak tersedia buat sementara waktu, sila semak halaman lain.",

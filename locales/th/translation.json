@@ -1,8 +1,12 @@
 {
   "common": {
+    "choose-language": "เลือกภาษา",
     "coptyright": "© {{year}} HaiWai News สงวนลิขสิทธิ์"
   },
   "components": {
+    "marquee": {
+      "content": "ยินดีต้อนรับสู่ Haiwai News หากคุณกำลังมองหาข่าวด่วนจากหลากหลายหมวดหมู่ คุณมาถูกที่แล้ว"
+    },
     "not-found": {
       "title": "ไม่พบหน้า",
       "sub-title": "หน้านี้ไม่พร้อมใช้งานชั่วคราว โปรดตรวจสอบหน้าอื่น ๆ",
