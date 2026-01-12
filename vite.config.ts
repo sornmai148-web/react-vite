@@ -20,4 +20,5 @@ export default defineConfig({
     },
   },
   base: "/react-vite/",
+  build: { chunkSizeWarningLimit: 1024 }, //1MB for each build chunk
 });

@@ -1,7 +1,15 @@
 {
   "common": {
     "choose-language": "Pilih bahasa",
-    "coptyright": "© {{year}} HaiWai News. Hak cipta terpelihara"
+    "coptyright": "© {{year}} HaiWai News. Hak cipta terpelihara",
+    "search-label": "Cari Berita",
+    "filter-label": "Tapis Berita",
+    "clear-filter": "Kosongkan Penapis",
+    "search-placeholder": "Cari perkataan berkaitan atau frasa ...",
+    "recommended-label": "Disyorka",
+    "news-label": "Berita Terkini",
+    "search-result": "Menemui {{total}} hasil untuk anda",
+    "advert": "Nantikan — Kemas Kini Menarik Akan Datang"
   },
   "components": {
     "marquee": {
@@ -16,10 +24,14 @@
       "title": "Pelayan sedang mengalami masalah",
       "sub-title": "Sila cuba lagi kemudian",
       "btn": "Kembali ke Laman Utama"
+    },
+    "list-empty-state": {
+      "title": "Tiada rekod berita",
+      "subtitle": "Maaf, kami tiada rekod untuk dipaparkan pada masa ini"
+    },
+    "search-empty-state": {
+      "title": "Berita Tidak Ditemui",
+      "subtitle": "Maaf, sila cuba cari menggunakan kata kunci lain yang berkaitan"
     }
-  },
-  "welcome": "Selamat datang ke React + Vite + i18n!",
-  "about": "Selamat datang ke halaman tentang",
-  "contact": "Selamat datang ke halaman hubungan",
-  "detail": "Halaman perincian"
+  }
 }

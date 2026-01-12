@@ -1,0 +1,56 @@
+import EmptyStateImg from "@/assets/empty-news.webp";
+import EmptyStateSearchImg from "@/assets/empty-search-result.webp";
+
+import { cn } from "@/lib/utils";
+import { ReactImage } from "./ReactImage";
+
+interface Props {
+  type?: "default" | "search";
+  title: string;
+  subtitle: string;
+}
+
+export const EmptyState: React.FC<Props> = ({
+  type = "default",
+  title,
+  subtitle,
+}) => {
+  const img = getImage(type);
+  return (
+    <div
+      className={cn(
+        "h-[calc(60dvh)] md:h-[calc(55dvh)] rounded-t-xl flex justify-center items-center",
+        { "h-[calc(60dvh)] md:h-[calc(55dvh)]": type == "default" }
+      )}
+    >
+      <div className="size-fit flex flex-col justify-center items-center">
+        <ReactImage
+          src={img}
+          alt="empty-state"
+          className="object-cover"
+          width={100}
+          height={62}
+        />
+        <div className="flex flex-col space-y-1 mt-4 justify-center items-center">
+          <h2 className="text-xl font-bold text-primary text-center">
+            {title}
+          </h2>
+          <span className="font-medium w-full px-10 text-gray-500 text-center text-sm">
+            {subtitle}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+function getImage(type: Exclude<Props["type"], undefined>) {
+  switch (type) {
+    default:
+    case "default":
+      return EmptyStateImg;
+
+    case "search":
+      return EmptyStateSearchImg;
+  }
+}

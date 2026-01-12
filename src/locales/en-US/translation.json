@@ -1,7 +1,15 @@
 {
   "common": {
     "choose-language": "Choose language",
-    "coptyright": "© {{year}} HaiWai News. All rights reserved"
+    "coptyright": "© {{year}} HaiWai News. All rights reserved",
+    "search-label": "Search News",
+    "filter-label": "Filter News",
+    "clear-filter": "Clear Filter",
+    "search-placeholder": "Search related words or phrases ...",
+    "recommended-label": "Recommended",
+    "news-label": "Latest News",
+    "search-result": "Found {{total}} results for you",
+    "advert": "Stay Tuned — Exciting Updates Ahead"
   },
   "components": {
     "marquee": {
@@ -16,10 +24,14 @@
       "title": "The server is having issues",
       "sub-title": "Please try again later",
       "btn": "Return to Home"
+    },
+    "list-empty-state": {
+      "title": "No news available",
+      "subtitle": "Sorry, we currently have no records to display."
+    },
+    "search-empty-state": {
+      "title": "News Not Found",
+      "subtitle": "Sorry, please try searching with other related keywords"
     }
-  },
-  "welcome": "Welcome to React + Vite + i18n!",
-  "about": "Welcome to about page",
-  "contact": "Welcome to contact page",
-  "detail": "Detail page"
+  }
 }

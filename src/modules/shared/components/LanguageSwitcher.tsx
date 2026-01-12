@@ -15,10 +15,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { useTranslation } from "react-i18next";
+import { getCurrentLocale } from "@/utils/getCurrentLocale";
 
 const locales = [
   {
-    code: "en-US",
+    code: "en-us",
     label: "English",
     countryCode: "gb",
     flag: (
@@ -30,7 +31,7 @@ const locales = [
     ),
   },
   {
-    code: "zhcn",
+    code: "zh-cn",
     label: "中文 (简体)",
     countryCode: "cn",
     flag: (
@@ -83,13 +84,14 @@ export const LocaleSwitcher = () => {
   const [countryCode, setCountryCode] = useState("");
 
   const { t, i18n } = useTranslation("translation");
+  const { currentLocale } = getCurrentLocale();
 
   const handleChange = (locale: string) => {
     i18n.changeLanguage(locale);
   };
 
-  const language = locales.find((x) => x.code == i18n.language);
-  const defaultCountrycode = locales.find((c) => c.code == i18n.language);
+  const language = locales.find((x) => x.code == currentLocale);
+  const defaultCountrycode = locales.find((c) => c.code == currentLocale);
 
   return (
     <DropdownMenu>
@@ -121,7 +123,7 @@ export const LocaleSwitcher = () => {
         <DropdownMenuLabel>{t("common.choose-language")}</DropdownMenuLabel>
         <DropdownMenuSeparator className="bg-gray-100" />
         <DropdownMenuRadioGroup
-          value={i18n.language}
+          value={currentLocale}
           onValueChange={(value) => {
             handleChange(value);
           }}

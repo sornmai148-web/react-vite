@@ -1,11 +1,16 @@
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import i18n from "@/i18n";
 
 import "./index.css";
 import "./i18n.ts";
 
 const queryClient = new QueryClient();
+
+i18n.on("languageChanged", () => {
+  router.invalidate();
+});
 
 import { routeTree } from "./routeTree.gen";
 

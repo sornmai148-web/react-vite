@@ -1,7 +1,15 @@
 {
   "common": {
     "choose-language": "เลือกภาษา",
-    "coptyright": "© {{year}} HaiWai News สงวนลิขสิทธิ์"
+    "coptyright": "© {{year}} HaiWai News สงวนลิขสิทธิ์",
+    "search-label": "ค้นหาข่าว",
+    "filter-label": "กรองข่าว",
+    "clear-filter": "ล้างตัวกรอง",
+    "search-placeholder": "ค้นหาคำที่เกี่ยวข้อง หรือวลี ...",
+    "recommended-label": "แนะนำ",
+    "news-label": "ข่าวล่าสุด",
+    "search-result": "พบผลลัพธ์ {{total}} รายการสำหรับคุณ",
+    "advert": "โปรดติดตาม — มีการอัปเดตที่น่าตื่นเต้นรออยู่"
   },
   "components": {
     "marquee": {
@@ -16,10 +24,14 @@
       "title": "เซิร์ฟเวอร์กำลังมีปัญหา",
       "sub-title": "โปรดลองอีกครั้งในภายหลัง",
       "btn": "กลับสู่หน้าแรก"
+    },
+    "list-empty-state": {
+      "title": "ไม่มีบันทึกข่าว",
+      "subtitle": "ขออภัย ขณะนี้เราไม่มีข้อมูลที่จะแสดง"
+    },
+    "search-empty-state": {
+      "title": "ไม่พบข่าวที่ค้นหา",
+      "subtitle": "ขออภัย กรุณาค้นหาโดยใช้คำหลักอื่นที่เกี่ยวข้อง"
     }
-  },
-  "welcome": "ยินดีต้อนรับสู่ React + Vite + i18n!",
-  "about": "ยินดีต้อนรับสู่หน้าเกี่ยวกับ",
-  "contact": "ยินดีต้อนรับสู่หน้าติดต่อ",
-  "detail": "หน้ารายละเอียด"
+  }
 }

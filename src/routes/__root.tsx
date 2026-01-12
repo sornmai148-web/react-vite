@@ -8,15 +8,20 @@ import type { QueryClient } from "@tanstack/react-query";
 import { Footer } from "@/components/layout/Footer";
 import { SomethingWentWrong } from "@/modules/shared/components/SomethingWentWrong";
 import { NotFound } from "@/modules/shared/components/NotFound";
+import ScrollToTopButton from "@/modules/shared/components/ScrollToTop";
 
 const RootLayout = () => (
   <>
-    <NuqsAdapter>
-      <Header />
-      <Outlet />
-      <Footer />
-    </NuqsAdapter>
-    <TanStackRouterDevtools />
+    <div className="bg-gray-100">
+      <NuqsAdapter>
+        <Header />
+        <Outlet />
+        <Footer />
+      </NuqsAdapter>
+      <TanStackRouterDevtools />
+    </div>
+
+    <ScrollToTopButton />
   </>
 );
 

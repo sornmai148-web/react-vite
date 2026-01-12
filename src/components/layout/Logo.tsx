@@ -1,5 +1,3 @@
-"use client";
-
 import LogoImg from "@/assets/news-logo.webp";
 import { Link } from "@tanstack/react-router";
 
@@ -8,7 +6,9 @@ export const Logo = () => {
     <Link
       to="/"
       onClick={() => {
-        window?.scrollTo({ top: 0, behavior: "smooth" });
+        if (typeof window != "undefined") {
+          window?.scrollTo({ top: 0, behavior: "smooth" });
+        }
       }}
     >
       <img
