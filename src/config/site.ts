@@ -1,4 +1,4 @@
-const publicUrl = "http://localhost:3000";
+const publicUrl = "https://sornmai148-web.github.io/react-vite/";
 
 export const siteConfig = {
   siteTitle: "海外新闻 Haiwai-xinwen",

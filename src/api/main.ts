@@ -8,10 +8,6 @@ interface Options {
   isFormData?: boolean;
 }
 
-/**
- * Note : Nextjs by default server fetching
- * Used for server fetching data
- */
 export async function fetchApi<T = any>(
   path: string,
   options: Options = {}
