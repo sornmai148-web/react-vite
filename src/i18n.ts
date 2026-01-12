@@ -8,8 +8,8 @@ i18n
   .use(LanguageDetector) // detect user language
   .use(initReactI18next) // pass i18n instance to react-i18next
   .init({
-    lng: "en-US",
-    fallbackLng: "en-US",
+    lng: "zh-CN",
+    fallbackLng: "zh-CN",
     ns: ["translation"],
     debug: import.meta.env.DEV,
     interpolation: {
