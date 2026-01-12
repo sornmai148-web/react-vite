@@ -36,6 +36,10 @@ function Homepage() {
         <OverlayLoader />
       </MatchRoute>
 
+      <MatchRoute to="/detail/$newId" pending>
+        <OverlayLoader />
+      </MatchRoute>
+
       <div className="relative min-h-[calc(100dvh-150px)] h-auto">
         {/*-- Text animation --*/}
         <TextMarqueeRunner text={t("components.marquee.content")} />
@@ -44,13 +48,6 @@ function Homepage() {
         </div>
 
         <DesktopFilterList filterOptions={filterOptions?.data?.list || []} />
-
-        {/* <Link to="/detail/$newId" params={{ newId: "1" }} viewTransition>
-          Detail
-          <MatchRoute to="/detail/$newId" pending>
-            <OverlayLoader />
-          </MatchRoute>
-        </Link> */}
       </div>
     </>
   );
