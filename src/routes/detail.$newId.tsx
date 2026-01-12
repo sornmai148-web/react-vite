@@ -4,7 +4,7 @@ export const Route = createFileRoute("/detail/$newId")({
   component: RouteComponent,
   loader: async () => {
     // simulate network delay
-    await new Promise((r) => setTimeout(r, 1500));
+    await new Promise((r) => setTimeout(r, 1200));
     return { users: [] };
   },
 });
