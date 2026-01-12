@@ -9,7 +9,11 @@
     "recommended-label": "แนะนำ",
     "news-label": "ข่าวล่าสุด",
     "search-result": "พบผลลัพธ์ {{total}} รายการสำหรับคุณ",
-    "advert": "โปรดติดตาม — มีการอัปเดตที่น่าตื่นเต้นรออยู่"
+    "advert": "โปรดติดตาม — มีการอัปเดตที่น่าตื่นเต้นรออยู่",
+    "btn-back": "กลับ",
+    "view-detail": "ดูรายละเอียด",
+    "related-news": "ข่าวที่เกี่ยวข้อง",
+    "advert-label": "โฆษณา"
   },
   "components": {
     "marquee": {
