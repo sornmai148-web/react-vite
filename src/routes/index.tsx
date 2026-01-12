@@ -5,14 +5,8 @@ import { createFileRoute, MatchRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { getFilterOptions } from "@/api/resource";
 import { getCurrentLocale } from "@/utils/getCurrentLocale";
-import { DesktopFilterList } from "@/modules/features/home/components/desktop-filter-list";
-import { lazy } from "react";
-
-const AdvertisementSlider = lazy(() =>
-  import("@/modules/shared/components/advertisment").then((m) => ({
-    default: m.AdvertisementSlider,
-  }))
-);
+import { DesktopFilterList } from "@/modules/features/home/components/DesktopFilterList";
+import { MobileFilterList } from "@/modules/features/home/components/MobileFilterList";
 
 export const Route = createFileRoute("/")({
   loaderDeps: () => {
@@ -43,10 +37,7 @@ function Homepage() {
       <div className="relative min-h-[calc(100dvh-150px)] h-auto">
         {/*-- Text animation --*/}
         <TextMarqueeRunner text={t("components.marquee.content")} />
-        <div className="max-md:hidden">
-          <AdvertisementSlider variant="desktop" />
-        </div>
-
+        <MobileFilterList filterOptions={filterOptions?.data?.list || []} />
         <DesktopFilterList filterOptions={filterOptions?.data?.list || []} />
       </div>
     </>
