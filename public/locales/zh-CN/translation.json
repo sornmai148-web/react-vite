@@ -9,7 +9,11 @@
     "recommended-label": "推荐",
     "news-label": "最新新闻",
     "search-result": "为您找到 {{total}} 条结果",
-    "advert": "敬请期待 — 精彩更新即将到来"
+    "advert": "敬请期待 — 精彩更新即将到来",
+    "btn-back": "返回",
+    "view-detail": "查看详情",
+    "related-news": "相关新闻",
+    "advert-label": "广告"
   },
   "components": {
     "marquee": {

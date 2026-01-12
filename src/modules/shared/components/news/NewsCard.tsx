@@ -4,7 +4,7 @@ import fallbackImage from "@/assets/news-fallback-image.webp";
 
 import type { INewsData } from "@/api/interface";
 import { getCurrentLocale } from "@/utils/getCurrentLocale";
-import { getFormatHumanReadable } from "@/config/day-js";
+import { getFormatHumanReadable } from "@/config/dayJs";
 import { useTranslation } from "react-i18next";
 import { lazy, Suspense } from "react";
 import { ReactImage } from "../ReactImage";
@@ -19,7 +19,7 @@ export const NewsCard: React.FC<Props> = (props) => {
   const { convertedLocale: locale } = getCurrentLocale();
   const { t } = useTranslation("translation");
 
-  if (!props?.title && !props?.summary) return null;
+  if (!props.title && !props.summary) return null;
 
   if (!props?.media?.length)
     return (

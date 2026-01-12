@@ -1,0 +1,1 @@
+export { RelatedNewsList } from "./RelatedNewsList";

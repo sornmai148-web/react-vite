@@ -9,7 +9,11 @@
     "recommended-label": "Recommended",
     "news-label": "Latest News",
     "search-result": "Found {{total}} results for you",
-    "advert": "Stay Tuned — Exciting Updates Ahead"
+    "advert": "Stay Tuned — Exciting Updates Ahead",
+    "btn-back": "Go back",
+    "view-detail": "View detail",
+    "related-news": "Related News",
+    "advert-label": "Advert"
   },
   "components": {
     "marquee": {

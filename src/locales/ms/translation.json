@@ -9,7 +9,11 @@
     "recommended-label": "Disyorka",
     "news-label": "Berita Terkini",
     "search-result": "Menemui {{total}} hasil untuk anda",
-    "advert": "Nantikan — Kemas Kini Menarik Akan Datang"
+    "advert": "Nantikan — Kemas Kini Menarik Akan Datang",
+    "btn-back": "Kembali",
+    "view-detail": "Lihat butiran",
+    "related-news": "Berita Berkaitan",
+    "advert-label": "Iklan"
   },
   "components": {
     "marquee": {
