@@ -5,7 +5,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 
 import { useState } from "react";
 
-const PAGE_LIMIT = 20;
+const PAGE_LIMIT = 25;
 
 export const useNewsSearchList = (
   queryParams: Omit<INewsListRequestPayload, "page" | "page_size">
